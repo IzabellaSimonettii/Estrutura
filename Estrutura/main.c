@@ -17,6 +17,15 @@ int main()
     case '+':
         printf("%d + %d = %d\n", operando1, operando2, operando1 + operando2);
         break;
+    case '-':
+        printf("%d - %d = %d\n", operando1, operando2, operando1 - operando2);
+        break;
+    case 'x':
+        printf("%d * %d = %d\n", operando1, operando2, operando1 * operando2);
+        break;
+    case '/':
+        printf("%d / %d = %d\n", operando1, operando2, operando1 / operando2);
+        break;
     }
     return 0;
 }
