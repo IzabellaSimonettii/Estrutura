@@ -10,10 +10,10 @@ void preeche_vetor(int v[], int t)
         v[i] = rand() % 100;
     }
 }
-void mostra_vetor(int v[], int t)
+void mostra_vetor(int v[], int t, char *msg)
 {
     int i;
-    printf("\n");
+    printf("\n%s\n", msg);
     for (i = 0; i < t; i++)
     {
         printf(" %d ", v[i]);
@@ -36,7 +36,21 @@ void bubble(int v[], int t)
         }
     }
 }
-
+void insertion(int v[], int t)
+{
+    int i, j, chave;
+    for (i = 1; i < t; i++)
+    {
+        chave = v[i];
+        j = i - 1;
+        while (j >= 0 && v[j] > chave)
+        {
+            v[j + 1] = v[j];
+            j--;
+        }
+        v[j + 1] = chave;
+    }
+}
 int main()
 {
     int t, *v;
@@ -46,11 +60,19 @@ int main()
     scanf("%d", &t);
     v = (int *)malloc(t * sizeof(int));
     preeche_vetor(v, t);
-    mostra_vetor(v, t);
+    mostra_vetor(v, t, "Primeiro vetor gerado");
+    // bubble
     ini = time(0);
     bubble(v, t);
-     fim = time(0);
-     printf("\n Bubble demorrou %d segundos \n", fim - ini);
+    fim = time(0);
+    mostra_vetor(v, t, "Vetor ordenado pelo bubble");
+    // insertion
+    preeche_vetor(v, t);
+    ini = time(0);
+    insertion(v, t);
+    fim = time(0);
+    mostra_vetor(v, t, "Vetor ordenado pelo insertion");
+    // printf("\n Bubble demorrou %d segundos \n", fim - ini);
     // mostra_vetor(v, t);
     return 0;
 }
