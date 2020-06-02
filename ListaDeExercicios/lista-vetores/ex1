@@ -4,8 +4,6 @@ A seguir, o programa exibe cada numero seguido da mensagem "par" ou "Impar".*/
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <time.h>
 
 void main() {
 int vetor[15];
