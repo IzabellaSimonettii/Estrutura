@@ -16,7 +16,7 @@ printf("Digite 10 valores: /n");
     scanf("%f",&vetor[i]);
   };
   
-  for (i=0; i<15; i++){
+  for (i=0; i<10; i++){
     if (vetor[i] > maior){
       maior = vetor[i];
     }
