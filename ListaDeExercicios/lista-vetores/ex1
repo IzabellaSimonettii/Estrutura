@@ -7,7 +7,6 @@ A seguir, o programa exibe cada numero seguido da mensagem "par" ou "Impar".*/
 
 void main() {
 int vetor[15];
-int soma=0;
 int i;
 
 printf("Digite 15 valores: /n");
