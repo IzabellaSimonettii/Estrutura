@@ -5,7 +5,7 @@ em um vetor de 10 valores digitados pelo usuário */
 #include <stdlib.h>
 
 void main() {
-int vetor[15];
+int vetor[10];
 int maior=0;
 int i;
 
