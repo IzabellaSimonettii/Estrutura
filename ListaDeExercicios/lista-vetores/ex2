@@ -1,0 +1,19 @@
+/* Escreva um programa em C que encontra o maior elemento 
+em um vetor de 10 valores digitados pelo usuário */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void main() {
+int vetor[15];
+int soma=0;
+int i;
+
+printf("Digite 10 valores: /n");
+
+  for ( i=0; i<10; i++ ) {
+    printf("Informe o valor");
+    scanf("%f",&vetor[i]);
+  };
+  
+}
