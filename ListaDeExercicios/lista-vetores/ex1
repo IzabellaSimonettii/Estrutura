@@ -16,7 +16,7 @@ printf("Digite 15 valores: /n");
     scanf("%f",&vetor[i]);
   };
   
-  for ( i=0; i<25; i++ ) {
+  for ( i=0; i<15; i++ ) {
   printf("O elemento %f do vetor = %f \n",i ,vetor[i]);
   
     if (i % 2 == 0) {
