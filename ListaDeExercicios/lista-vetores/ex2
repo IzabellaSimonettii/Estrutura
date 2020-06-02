@@ -6,7 +6,7 @@ em um vetor de 10 valores digitados pelo usuário */
 
 void main() {
 int vetor[15];
-int soma=0;
+int maior=0;
 int i;
 
 printf("Digite 10 valores: /n");
@@ -16,4 +16,10 @@ printf("Digite 10 valores: /n");
     scanf("%f",&vetor[i]);
   };
   
+  for (i=0; i<15; i++){
+    if (vetor[i] > maior){
+      maior = vetor[i];
+    }
+    printf("O maior número é o %f", maior);
+  };
 }
