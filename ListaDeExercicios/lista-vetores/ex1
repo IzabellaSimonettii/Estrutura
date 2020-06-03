@@ -17,7 +17,7 @@ printf("Digite 15 valores: /n");
   };
   
   for ( i=0; i<15; i++ ) {
-  printf("O elemento %f do vetor = %f \n",i ,vetor[i]);
+  printf("O elemento %d do vetor = %d \n",i ,vetor[i]);
   
     if (i % 2 == 0) {
       printf("É um numero par.");  
